@@ -5,9 +5,9 @@ app = Flask(__name__)
 team_members = [
     {
         "id": 1,
-        "name": "김민수",
+        "name": "조수아",
         "role": "Backend Developer / Flask 담당",
-        "intro": "Flask 기반 서버 구조와 API 설계를 담당하는 백엔드 개발자입니다.",
+        "intro": "dongtong 4팀 백엔드 개발 담당 조수아입니다.",
         "detail_intro": (
             "김민수 팀원은 Python과 Flask를 기반으로 웹 애플리케이션의 서버 구조를 설계하고, "
             "사용자 요청을 처리하는 라우팅과 데이터 처리 로직을 담당합니다. 유지보수가 쉬운 코드 구조와 "
