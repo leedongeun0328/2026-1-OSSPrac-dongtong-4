@@ -27,7 +27,16 @@ body {
 }
 
 .justify-text {
-    text-align: justify;
+    text-align: left !important;
+    word-break: keep-all;
+    line-height: 1.7;
+}
+
+#project .project-text,
+#project .mini-feature p {
+    text-align: left !important;
+    word-break: keep-all;
+    line-height: 1.7;
 }
 
 .glass-navbar {
@@ -431,4 +440,112 @@ body {
     .skill-logo-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* hero 카드 위치 조정 */
+.hero-card {
+    position: relative;
+    overflow: visible !important;
+}
+
+/* 바깥 카드 공통 */
+.hero-card .floating-card {
+    position: absolute !important;
+    z-index: 2 !important;
+}
+
+/* 기본 화면 기준 */
+.hero-card .card-one {
+    top: 70px !important;
+    left: -35px !important;
+}
+
+.hero-card .card-two {
+    top: 180px !important;
+    right: -45px !important;
+}
+
+.hero-card .card-three {
+    bottom: 75px !important;
+    left: -25px !important;
+}
+
+/* 작은 화면일 때도 조금 더 바깥으로 */
+@media (max-width: 576px) {
+    .hero-card .card-one {
+        top: 35px !important;
+        left: -10px !important;
+    }
+
+    .hero-card .card-two {
+        top: 120px !important;
+        right: -15px !important;
+    }
+
+    .hero-card .card-three {
+        bottom: 45px !important;
+        left: -5px !important;
+    }
+}
+
+.hero-visual-center .hero-subtitle {
+    text-align: center !important;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.hero-visual-center .hero-subtitle span {
+    display: block;
+    text-align: center !important;
+    width: 100%;
+}
+
+.hero-title-custom {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.25;
+    word-break: keep-all;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+/* 전체 배경 하늘색 → 연한 초록색 계열로 변경 */
+body {
+    background: linear-gradient(135deg, #f4fbf4 0%, #e8f5e9 100%) !important;
+}
+
+/* hero 영역 배경 */
+.hero-section {
+    background: linear-gradient(135deg, #f4fbf4 0%, #e8f5e9 100%) !important;
+}
+
+/* 카드 배경 */
+.hero-card,
+.content-card,
+.detail-card,
+.mini-feature {
+    background: rgba(255, 255, 255, 0.82) !important;
+    border-color: #d8ead8 !important;
+}
+
+/* 포인트 색상 */
+.btn-primary,
+.btn-main {
+    background-color: #6f9f7a !important;
+    border-color: #6f9f7a !important;
+}
+
+/* 아이콘 색 */
+.hero-visual-center i,
+.floating-card i,
+.mini-feature i {
+    color: #5f8f68 !important;
+}
+
+#architecture {
+    scroll-margin-top: 100px;
 }
