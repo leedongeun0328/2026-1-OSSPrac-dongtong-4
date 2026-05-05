@@ -4,7 +4,6 @@
 
 {% block content %}
 
-
 <section class="hero-section d-flex align-items-center">
     <div class="container">
         <div class="row align-items-center g-5">
@@ -14,22 +13,14 @@
                 </span>
 
                 <h1 class="hero-title-custom">
-                     오픈소스소프트웨어<br>
+                    오픈소스소프트웨어<br>
                     4팀 - dongtong 팀<br>
                     <span class="nowrap">소개 웹사이트</span>
                 </h1>
 
                 <p class="lead text-secondary justify-text">
-                    본 웹사이트는 오픈소스소프트웨어 4팀 dongtong의 팀 소개 페이지입니다. 
-                    팀원별 기술 스택, 프로젝트 기여도, 연락처, 자기소개 등을 카드와 표 형태로 제공합니다.   
-
-                    
-                </h1>
-
-                <!--<p class="lead text-secondary justify-text">
-                    //본 웹사이트는 Python Flask, Nginx 기반으로 제작된 오픈소스소프트웨어 프로젝트 4팀 소개 페이지입니다.
-                    //각 팀원의 역할, 기술 스택, 프로젝트 기여도, 포트폴리오와 연락처를 한눈에 확인할 수 있습니다!
-            -->
+                    본 웹사이트는 오픈소스소프트웨어 4팀 dongtong의 팀 소개 페이지입니다.
+                    팀원별 기술 스택, 프로젝트 기여도, 연락처, 자기소개 등을 카드와 표 형태로 제공합니다.
                 </p>
 
                 <div class="d-flex gap-3 mt-4">
@@ -73,6 +64,7 @@
     </div>
 </section>
 
+
 <section id="project" class="section-space">
     <div class="container">
         <div class="row justify-content-center">
@@ -80,12 +72,11 @@
                 <div class="content-card">
                     <h2 class="section-title">프로젝트 소개</h2>
                     <p class="project-text">
-                        본 프로젝트는 오픈소스소프트웨어 실습 dongtong 4팀의 팀원 소개 웹사이트를 만들어보는 것이며, 
-                        웹 개발 기초와 오픈소스 협업 방식을 팀원들과 함께 실습하는 것을 목표로 합니다. 
-                        Python Flask를 기반으로 웹 애플리케이션 구조를 만들고, HTML, CSS, Bootstrap을 활용하여 
-                        팀원 소개 페이지를 구성해보았습니다. 각 팀원의 역할과 기술 역량을 소개할 수 있도록 화면을 설계하였으며, 
-                        GitHub의 Fork, Branch, Pull Request, Merge 과정을 활용하여 팀원 간 협업을 통해 진행 되었습니다. 
-                        
+                        본 프로젝트는 오픈소스소프트웨어 실습 dongtong 4팀의 팀원 소개 웹사이트를 만들어보는 것이며,
+                        웹 개발 기초와 오픈소스 협업 방식을 팀원들과 함께 실습하는 것을 목표로 합니다.
+                        Python Flask를 기반으로 웹 애플리케이션 구조를 만들고, HTML, CSS, Bootstrap을 활용하여
+                        팀원 소개 페이지를 구성해보았습니다. 각 팀원의 역할과 기술 역량을 소개할 수 있도록 화면을 설계하였으며,
+                        GitHub의 Fork, Branch, Pull Request, Merge 과정을 활용하여 팀원 간 협업을 통해 진행되었습니다.
                     </p>
 
                     <div class="row g-4 mt-4">
@@ -171,14 +162,16 @@
                     </div>
 
                     <p class="text-secondary mt-4 mb-0 justify-text">
-                        사용자는 브라우저를 통해 웹사이트에 접속하고, 브라우저는 Flask 애플리케이션에 페이지를 요청합니다. Flask는 요청에 맞는 HTML 템플릿을 렌더링하고,
-                        static 폴더의 CSS와 이미지 파일을 함께 불러와 화면을 구성합니다. 또한 Bootstrap을 활용하여 다양한 화면 크기에서도 보기 좋은 반응형 페이지를 구현하였습니다.
+                        사용자는 브라우저를 통해 웹사이트에 접속하고, 브라우저는 Flask 애플리케이션에 페이지를 요청합니다.
+                        Flask는 요청에 맞는 HTML 템플릿을 렌더링하고, static 폴더의 CSS와 이미지 파일을 함께 불러와 화면을 구성합니다.
+                        또한 Bootstrap을 활용하여 다양한 화면 크기에서도 보기 좋은 반응형 페이지를 구현하였습니다.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <section id="team" class="section-space pt-0">
     <div class="container">
@@ -254,6 +247,142 @@
                 </div>
             </div>
             {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+
+<section id="process" class="section-space pt-0">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="section-title">개발과정</h2>
+            <p class="text-secondary">
+                dongtong 팀이 웹사이트를 기획하고 구현한 과정을 정리했습니다.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up">
+                <div class="content-card">
+                    <h2 class="section-title">프로젝트 진행 흐름</h2>
+
+                    <div class="process-timeline">
+                        <div class="process-item">
+                            <div class="process-number">01</div>
+                            <div>
+                                <h5>프로젝트 기획</h5>
+                                <p>
+                                    오픈소스소프트웨어 실습 과제의 목적에 맞춰 팀 소개 웹사이트를 주제로 정하고,
+                                    메인 페이지, 프로젝트 소개, 팀원 카드, 상세 페이지로 전체 구조를 설계하였습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="process-item">
+                            <div class="process-number">02</div>
+                            <div>
+                                <h5>역할 분담</h5>
+                                <p>
+                                    Flask 서버 구조, HTML/CSS 화면 구성, Bootstrap 기반 반응형 디자인,
+                                    Nginx 및 배포 환경 구성 등 기능별로 역할을 나누어 개발을 진행하였습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="process-item">
+                            <div class="process-number">03</div>
+                            <div>
+                                <h5>Flask 구조 구현</h5>
+                                <p>
+                                    app.py에서 팀원 데이터를 관리하고, 메인 페이지와 팀원 상세 페이지로 이동할 수 있도록
+                                    라우팅을 구성하였습니다. templates와 static 폴더를 분리하여 유지보수가 쉬운 구조로 만들었습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="process-item">
+                            <div class="process-number">04</div>
+                            <div>
+                                <h5>화면 디자인 구현</h5>
+                                <p>
+                                    Bootstrap과 CSS를 활용하여 메인 소개 영역, 프로젝트 설명, 웹 구조 다이어그램,
+                                    팀원 카드, 상세 프로필 페이지를 구현하였습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="process-item">
+                            <div class="process-number">05</div>
+                            <div>
+                                <h5>GitHub 협업</h5>
+                                <p>
+                                    팀원별 브랜치를 활용하여 기능을 나누어 작업하고, Pull Request를 통해 변경 사항을 확인한 뒤
+                                    main 브랜치에 병합하는 방식으로 협업을 진행하였습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="process-item">
+                            <div class="process-number">06</div>
+                            <div>
+                                <h5>테스트 및 개선</h5>
+                                <p>
+                                    이미지 경로, 템플릿 연결, navbar 이동, 상세 페이지 라우팅 등을 확인하며 오류를 수정하고
+                                    사용자에게 보기 좋은 화면이 되도록 디자인을 개선하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-10" data-aos="fade-up">
+                <div class="content-card">
+                    <h2 class="section-title">협업 방식</h2>
+
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="mini-feature">
+                                <i class="bi bi-git"></i>
+                                <h5>Branch</h5>
+                                <p>
+                                    각자 맡은 기능을 독립적으로 작업하기 위해 개인 브랜치를 생성하여 개발을 진행하였습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mini-feature">
+                                <i class="bi bi-github"></i>
+                                <h5>Pull Request</h5>
+                                <p>
+                                    완성된 코드는 바로 병합하지 않고 Pull Request를 통해 코드 변경 내용을 확인하였습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mini-feature">
+                                <i class="bi bi-check2-circle"></i>
+                                <h5>Merge</h5>
+                                <p>
+                                    충돌 여부와 기능 동작을 확인한 뒤 main 브랜치에 병합하여 최종 결과물을 완성하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-secondary justify-text mt-4 mb-0">
+                        이번 프로젝트를 통해 Flask의 기본 라우팅 구조, 템플릿 렌더링 방식, static 파일 연결 방식,
+                        Bootstrap을 활용한 반응형 UI 구성 방법을 익힐 수 있었습니다. 또한 GitHub를 활용한 브랜치 관리,
+                        Pull Request, Merge 과정을 직접 경험하면서 오픈소스 협업 흐름을 이해할 수 있었습니다.
+                    </p>
+                </div>
+            </div>
         </div>
 
     </div>

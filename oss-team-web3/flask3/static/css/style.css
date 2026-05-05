@@ -550,3 +550,49 @@ body {
     scroll-margin-top: 100px;
 }
 
+#process {
+    scroll-margin-top: 100px;
+}
+
+.process-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.process-item {
+    display: flex;
+    gap: 22px;
+    padding: 24px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px solid var(--startup-border);
+}
+
+.process-number {
+    min-width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #6f9f7a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.process-item h5 {
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.process-item p {
+    color: var(--bs-secondary-color);
+    margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .process-item {
+        flex-direction: column;
+    }
+}
