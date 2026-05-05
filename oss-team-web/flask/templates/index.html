@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오픈소스소프트웨어 프로젝트 팀 소개</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Open Source Software Project Team</h1>
+        <p>Flask와 Nginx 기반 웹 서비스를 개발하는 3인 프로젝트 팀입니다.</p>
+    </header>
+
+    <section class="project-info">
+        <h2>프로젝트 소개</h2>
+        <p>
+            본 프로젝트는 Python Flask와 Nginx를 활용하여 오픈소스소프트웨어 프로젝트 팀을 소개하는
+            웹 페이지를 구축하는 것을 목표로 합니다. 각 팀원은 백엔드, 프론트엔드, 배포 및 운영 역할을
+            분담하여 협업합니다.
+        </p>
+    </section>
+
+    <section class="team-section">
+        <h2>팀원 소개</h2>
+
+        <div class="team-container">
+            {% for member in team_members %}
+            <div class="member-card">
+                <img src="{{ url_for('static', filename=member.image) }}" alt="{{ member.name }} 사진">
+
+                <h3>{{ member.name }}</h3>
+                <p class="role">{{ member.role }}</p>
+                <p class="intro">{{ member.intro }}</p>
+
+                <h4>기술 스택</h4>
+                <ul class="skills">
+                    {% for skill in member.skills %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+
+                <h4>프로젝트 기여도</h4>
+                <p>{{ member.contribution }}</p>
+
+                <div class="contact">
+                    <a href="{{ member.portfolio }}" target="_blank">포트폴리오</a>
+                    <a href="mailto:{{ member.email }}">이메일</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Open Source Software Project Team. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
